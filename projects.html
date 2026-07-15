@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — GieMyung Lee</title>
+<meta name="description" content="Research and engineering projects by GieMyung Lee — workplace safety prediction, urban change from historical maps, public-sector AI.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class="brand" href="index.html">Gie Lee</a>
+  <ul>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="projects.html" class="here">Projects</a></li>
+    <li><a href="cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+  <h1>Projects</h1>
+  <p class="lede">Research and engineering work — from injury-risk prediction for a state agency to computer vision on 1940s city maps.</p>
+
+  <div class="card" id="safety">
+    <h3>Workplace Injury &amp; Fatality Risk Prediction <span class="badge">Ongoing</span></h3>
+    <div class="meta">Community Informatics Lab · with the Virginia Department of Labor and Industry (VDOLI) · 2026 –</div>
+    <ul>
+      <li>Statistical and machine learning models predicting workplace injury and fatality risk across Virginia's industry sectors.</li>
+      <li>Integrates OSHA enforcement records, Census data, and geospatial features into a reproducible modeling pipeline.</li>
+      <li>Extending toward sector-by-timeframe fatality probability prediction — a rare-event modeling problem where standard classifiers break down.</li>
+      <li>Deliverables include reports, visualizations, and presentations for agency stakeholders; I also coordinate and mentor a three-student research team.</li>
+    </ul>
+    <div class="tags"><span>Python</span><span>ML / Statistics</span><span>OSHA</span><span>Census</span><span>Geospatial</span><span>Rare events</span></div>
+  </div>
+
+  <div class="card" id="urban">
+    <h3>Urban Change from Historical Redlining Maps <span class="badge">ASIS&amp;T 2025</span></h3>
+    <div class="meta">Community Informatics Lab · 2024 –</div>
+    <ul>
+      <li>Quantifies long-run urban change by linking 1930s HOLC redlining boundaries with road-network change and census records across cities in Colorado, Ohio, and North Carolina.</li>
+      <li>Developed a map-anchored extraction pipeline that pulls road networks from scanned 1940s city maps using computer vision (thresholding, clustering, and ridge-detection methods) to recover roads that no longer exist.</li>
+      <li>Validated on Denver's Auraria neighborhood, recovering 7.2&nbsp;km of demolished streets.</li>
+      <li>First-author short paper at ASIS&amp;T 2025; full study in progress.</li>
+    </ul>
+    <div class="tags"><span>Computer Vision</span><span>GIS</span><span>HOLC / Redlining</span><span>Census (NHGIS)</span><span>Python</span></div>
+  </div>
+
+  <div class="card" id="clearinghouse">
+    <h3>U.S. Government AI Use Case Clearinghouse</h3>
+    <div class="meta">Summer Research Project · Arlington, VA · 2025</div>
+    <ul>
+      <li>Collected and curated federal AI use cases from official AI inventories, government sources, and news outlets.</li>
+      <li>Built an NLP pipeline — text similarity, TF-IDF disambiguation, and LLM summarization — to turn unstructured documents into structured, comparable use-case records.</li>
+      <li>Developed the web platform and automated data pipeline on Firebase and GCP, with scheduled keyless Cloud Run ingestion.</li>
+    </ul>
+    <div class="tags"><span>NLP</span><span>LLM APIs</span><span>TF-IDF</span><span>Firebase</span><span>GCP / Cloud Run</span></div>
+  </div>
+
+  <div class="card" id="azure">
+    <h3>Azure Lab Services Resource Automation <span class="badge">Microsoft Capstone</span></h3>
+    <div class="meta">Microsoft · University of Washington capstone · 2022 – 2023</div>
+    <ul>
+      <li>Built a standalone web application that lets educators automate resource creation on Azure Lab Services.</li>
+      <li>Front end in TypeScript, React, and Redux; back end in C# with ASP.NET and Azure Functions, in collaboration with Microsoft engineers.</li>
+      <li>Cut daily API calls and sped up deployment workflows by caching critical values.</li>
+      <li>Won the Innovation Award at the UW iSchool Capstone Gala 2023.</li>
+    </ul>
+    <div class="tags"><span>TypeScript</span><span>React / Redux</span><span>C# / ASP.NET</span><span>Azure Functions</span></div>
+  </div>
+
+  <div class="card" id="pathways">
+    <h3>Pathways Seminar Platform</h3>
+    <div class="meta">Pathways to Cross-Cultural Understanding (non-profit) · 2020 – 2021</div>
+    <ul>
+      <li>Led development of a React site for online seminars serving 500 international students during the pandemic, raising participation by 40%.</li>
+      <li>Automated testing with Jest and Selenium under CI/CD via GitHub Actions, with continuous deployment to Heroku.</li>
+    </ul>
+    <div class="tags"><span>React</span><span>Jest / Selenium</span><span>CI/CD</span></div>
+  </div>
+</main>
+
+<footer>© 2026 GieMyung Lee</footer>
+
+</body>
+</html>
