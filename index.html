@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GieMyung Lee — Community Informatics Lab, GMU</title>
 <meta name="description" content="GieMyung (Gie) Lee — researcher at the Community Informatics Lab, George Mason University. Machine learning, NLP, and geospatial data science for public-sector problems.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GieMyung Lee — Community Informatics Lab, GMU">
+<meta property="og:description" content="Machine learning, NLP, and geospatial data science for communities and government. Open to Summer 2027 ML/DS internships.">
+<meta property="og:url" content="https://landname.github.io/">
+<meta property="og:image" content="https://landname.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="assets/style.css">
 <style>
   /* Homepage scene system — body background cross-fades per active scene */
@@ -47,6 +54,20 @@
     transition: border-color .2s, background .2s;
   }
   .hero-links a:hover { border-color: var(--accent); background: var(--accent-soft); text-decoration: none; }
+  /* Internship availability pill */
+  .avail {
+    display: inline-flex; align-items: center; gap: 9px;
+    padding: 8px 18px; border-radius: 999px; margin-bottom: 26px;
+    border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
+    background: var(--accent-soft); color: var(--text);
+    font-size: 0.88rem; font-weight: 600;
+  }
+  .avail:hover { text-decoration: none; border-color: var(--accent); }
+  .avail .dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+    animation: blink 1.8s ease-in-out infinite;
+  }
+  @keyframes blink { 0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(52,211,153,.5);} 50% { opacity: .55; box-shadow: 0 0 0 6px rgba(52,211,153,0);} }
   .scroll-hint {
     position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);
     color: var(--muted); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
@@ -132,6 +153,7 @@
 <section class="scene" id="hero" data-bg="#0b0f14" data-accent="#34d399">
   <canvas id="net"></canvas>
   <div class="scene-inner">
+    <a class="reveal avail" href="mailto:glee10@gmu.edu?subject=Summer%202027%20Internship"><span class="dot"></span>Open to Summer 2027 ML/DS internships</a>
     <div class="reveal kicker">Community Informatics Lab · George Mason University</div>
     <h1 class="reveal">GieMyung Lee</h1>
     <p class="reveal lead" style="margin-left:auto;margin-right:auto;">I turn messy public data into models people can act on — machine learning, NLP, and geospatial methods for communities and government.</p>
@@ -224,6 +246,7 @@
   <div class="scene-inner">
     <div class="reveal kicker">Get in touch</div>
     <h2 class="reveal big">Let's talk data, cities, and public problems.</h2>
+    <p class="reveal body-text">I'm seeking a <strong>Summer 2027 machine learning / data science internship</strong> — if my work fits your team, I'd love to hear from you.</p>
     <div class="reveal contact-cards">
       <a href="mailto:glee10@gmu.edu"><div class="label">Email</div><div class="sub">glee10@gmu.edu</div></a>
       <a href="https://www.linkedin.com/in/gielee/" target="_blank" rel="noopener"><div class="label">LinkedIn</div><div class="sub">in/gielee</div></a>
